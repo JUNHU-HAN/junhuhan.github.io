@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세상에서 제일 이상한 디자인</title>
+    <style>
+        body {
+            background: repeating-linear-gradient(45deg, #FF00FF, #FF00FF 10px, #00FF00 10px, #00FF00 20px); /* 눈이 아플 정도로 번쩍이는 배경 */
+            color: #FFD700; /* 금색 텍스트 */
+            font-family: "GungSeo", cursive;
+            text-align: left;
+            padding: 50px;
+            animation: bodyAnimation 0.5s infinite alternate;
+        }
+
+        @keyframes bodyAnimation {
+            0% { background-position: 0 0; }
+            100% { background-position: 300% 300%; }
+        }
+
+        h1 {
+            background: radial-gradient(circle, #FFFF00, #FF0000, #00FF00); /* 원형으로 퍼지는 컬러 */
+            color: #0000FF; /* 파란색 */
+            padding: 50px;
+            border: 20px double #FF69B4; /* 두꺼운 핫핑크 이중선 */
+            transform: rotate(-20deg);
+            animation: h1Animation 0.6s infinite alternate ease-in-out;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @keyframes h1Animation {
+            0% { transform: rotate(-20deg) scale(1); }
+            100% { transform: rotate(20deg) scale(1.5); }
+        }
+
+        p {
+            background: conic-gradient(#FFA500, #00FFFF, #FF00FF, #FFD700, #8A2BE2, #ADFF2F); /* 더욱 복잡한 원형 그라데이션 */
+            color: #0000FF; /* 파란색 */
+            padding: 30px;
+            border: 15px groove #4B0082; /* 홈이 파인 듯한 테두리 */
+            font-size: 30px;
+            line-height: 1.5;
+            letter-spacing: 5px;
+            animation: pAnimation 1s infinite linear;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @keyframes pAnimation {
+            0% { letter-spacing: 5px; transform: rotate(0deg); }
+            50% { letter-spacing: 20px; transform: rotate(10deg); }
+            100% { letter-spacing: 5px; transform: rotate(-10deg); }
+        }
+
+        a {
+            background: linear-gradient(to right, #00FFFF, #FF00FF, #FFFF00, #FF4500); /* 더욱 복잡한 그라데이션 */
+            color: #000080; /* 남색 */
+            padding: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: "GungSeo", cursive;
+            border: 10px outset #8B0000; /* 돌출된 테두리 */
+            font-size: 24px;
+            animation: aAnimation 0.4s infinite alternate;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        @keyframes aAnimation {
+            0% { transform: rotate(-15deg) scale(1); }
+            100% { transform: rotate(15deg) scale(1.4); }
+        }
+
+        a:hover {
+            background: linear-gradient(to bottom, #FFD700, #8B0000, #00FF00, #FF69B4); /* 그라데이션 변경 */
+            color: #FF00FF; /* 밝은 마젠타 */
+            animation: hoverAnimation 0.2s infinite alternate;
+        }
+
+        @keyframes hoverAnimation {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.5) rotate(15deg); }
+        }
+
+        .button {
+            background: repeating-linear-gradient(135deg, #FF69B4, #FF69B4 20px, #FFD700 20px, #ADFF2F 40px); /* 더 많은 색상을 번갈아 사용 */
+            color: #4B0082; /* 인디고 */
+            padding: 30px 60px;
+            border-radius: 10px;
+            border: 15px ridge #00FF00; /* 융기된 테두리 */
+            font-size: 38px;
+            font-family: "GungSeo", cursive;
+            cursor: not-allowed; /* 클릭할 수 없다는 표시 */
+            animation: buttonAnimation 0.5s infinite alternate-reverse;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @keyframes buttonAnimation {
+            0% { transform: translateX(0) rotate(0deg); }
+            100% { transform: translateX(20px) rotate(20deg); }
+        }
+
+        .button:hover {
+            background: linear-gradient(to left, #4B0082, #FFFFFF, #FF6347); /* 호버 시 이상한 색 변화 */
+            color: #FF4500; /* 밝은 주황색 */
+            animation: buttonHoverAnimation 0.3s infinite alternate;
+        }
+
+        @keyframes buttonHoverAnimation {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.7) rotate(15deg); }
+        }
+
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20 {
+            width: 100%;
+            height: 100px;
+            background: repeating-linear-gradient(45deg, #FF6347, #FF6347 10px, #40E0D0 10px, #7FFF00 20px, #FF69B4 30px);
+            color: #000000;
+            font-family: "GungSeo", cursive;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            border: 15px solid #FFD700;
+            animation: boxAnimation 1s infinite alternate;
+            margin: 10px 0;
+        }
+
+        @keyframes boxAnimation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(15deg) scale(1.2); }
+        }
+
+        .text-glow {
+            color: #FF4500;
+            font-size: 50px;
+            font-family: "GungSeo", cursive;
+            text-shadow: 0 0 15px #FFD700, 0 0 25px #FF4500, 0 0 35px #FF6347, 0 0 45px #FF00FF;
+            animation: textGlowAnimation 1s infinite alternate;
+        }
+
+        @keyframes textGlowAnimation {
+            0% { text-shadow: 0 0 15px #FFD700, 0 0 25px #FF4500, 0 0 35px #FF6347, 0 0 45px #FF00FF; }
+            100% { text-shadow: 0 0 25px #FFD700, 0 0 35px #FF4500, 0 0 45px #FF6347, 0 0 55px #FF00FF; }
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle, #FF4500, #FFD700);
+            position: absolute;
+            border-radius: 50%;
+            animation: ballAnimation 3s infinite ease-in-out;
+        }
+
+        @keyframes ballAnimation {
+            0% { top: 0; left: 0; }
+            25% { top: 50%; left: 75%; }
+            50% { top: 100%; left: 50%; }
+            75% { top: 50%; left: 25%; }
+            100% { top: 0; left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>세상에서 제일 이상한 웹사이트</h1>
+    <p>이 웹사이트는 시각적으로 모든 것을 자극합니다. 색상 대비가 정말 어지럽습니다! 이곳에서 시각적인 충격을 느낄 준비가 되셨나요?</p>
+    <a href="#">어디든지 이동하기</a>
+    <br><br>
+    <button class="button">절대 누르지 마세요!</button>
+    <div class="box1">이상한 막대기 1</div>
+    <div class="box2">이상한 막대기 2</div>
+    <div class="box3">이상한 막대기 3</div>
+    <div class="box4">이상한 막대기 4</div>
+    <div class="box5">이상한 막대기 5</div>
+    <div class="box6">이상한 막대기 6</div>
+    <div class="box7">이상한 막대기 7</div>
+    <div class="box8">이상한 막대기 8</div>
+    <div class="box9">이상한 막대기 9</div>
+    <div class="box10">이상한 막대기 10</div>
+    <div class="box11">이상한 막대기 11</div>
+    <div class="box12">이상한 막대기 12</div>
+    <div class="box13">이상한 막대기 13</div>
+    <div class="box14">이상한 막대기 14</div>
+    <div class="box15">이상한 막대기 15</div>
+    <div class="box16">이상한 막대기 16</div>
+    <div class="box17">이상한 막대기 17</div>
+    <div class="box18">이상한 막대기 18</div>
+    <div class="box19">이상한 막대기 19</div>
+    <div class="box20">이상한 막대기 20</div>
+    <p class="text-glow">이것은 정말 눈부시게 번쩍입니다! 여러분의 시각적인 내성을 테스트하는 곳입니다!</p>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+</body>
+</html>
